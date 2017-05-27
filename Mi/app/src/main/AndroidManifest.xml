@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.evolutionct.mixxi"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mixxiicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDi0MOyp-FVJBtM3P7CUmz5SYBqSfNe1AE" />
+
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.TrafficMapsActivity"
+            android:label="Traffic"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.speed.SpeedActivity"
+            android:label="Speedometer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.PlaceActivity"
+            android:label="NearbyPlaces"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.JsOneActivity"
+            android:label="Accident"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.SimpleDirectionActivity"
+            android:label="Fuel Calcution"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.GlobalActivity"
+            android:label="Weather"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.launch.FirstLaunch"
+            android:label="Weather"
+            android:parentActivityName="com.example.evolutionct.mixxi.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.WeatherActivity"
+            android:label="Weather"
+            android:parentActivityName="com.example.evolutionct.mixxi.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName="com.example.evolutionct.mixxi.activity.WeatherActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.WeatherActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.evolutionct.mixxi.activity.Weather2Activity"
+            android:label="Weather"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.speed.Settings"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.evolutionct.mixxi.speed.SpeedActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.speed.SpeedActivity" />
+        </activity>
+        <activity
+            android:name="com.example.evolutionct.mixxi.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.evolutionct.mixxi.speechmixxi.SpeechActivity"
+            android:parentActivityName="com.example.evolutionct.mixxi.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.evolutionct.mixxi.activity.MainActivity" />
+        </activity>
+
+
+        <service android:name="com.example.evolutionct.mixxi.speed.GpsServices" />
+
+
+    </application>
+
+</manifest>

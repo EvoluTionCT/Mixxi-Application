@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Mixxi" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_traffic_black_24dp"
+            android:title="Traffic"
+            android:label="Driving Feature"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_cloud_black_24dp"
+            android:title="Weather" />
+        <item
+            android:id="@+id/nav_view"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Place" />
+
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/speedometer"
+            android:title="Speedometer" />
+        <item
+            android:id="@+id/nav_jsone"
+            android:icon="@drawable/ic_warning_black_24dp"
+            android:title="Accident" />
+
+        <item
+            android:id="@+id/nav_fuel"
+            android:icon="@drawable/ic_local_gas_station_black_24dp"
+            android:title="Fuel Calculation" />
+    </group>
+
+    <item android:title="About Me">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About Mixxi" />
+        </menu>
+    </item>
+
+
+</menu>

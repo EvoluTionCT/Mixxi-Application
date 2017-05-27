@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calibration" />
+
+    <TextView
+        android:id="@+id/detect_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:id="@+id/ll2"
+        android:orientation="vertical" >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:text="Mixxi is listening ....." />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="5dp"
+            android:src="@drawable/mi"
+            android:id="@+id/mi"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="-150px"
+            android:id="@+id/message"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

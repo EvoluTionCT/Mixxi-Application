@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/speedfragment"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SpeedFragment">
+
+    <com.example.evolutionct.mixxi.view.Speedometer
+        android:id="@+id/Speedometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        custom:currentSpeed="0"
+        custom:maxSpeed="300" />
+
+    <Button android:id="@+id/IncreaseSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/increase"
+        android:layout_below="@id/Speedometer"
+        android:layout_toRightOf="@+id/MiddleView"
+        android:layout_alignParentRight="true"/>
+    <View
+        android:id="@+id/MiddleView"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true" />
+    <Button android:id="@+id/DecreaseSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease"
+        android:layout_toLeftOf="@id/MiddleView"
+        android:layout_below="@id/Speedometer"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:text="Speed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IncreaseSpeed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:text="Push me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/MiddleView"
+        android:layout_toEndOf="@+id/MiddleView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/but1" />
+    <!-- <fragment
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:name="com.luminiasoft.labs.views.myFragment"
+         android:id="@+id/fragment_my"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true"
+         tools:layout="@layout/fragment_my" />
+
+
+     <!-
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Speed"
+         android:textSize="40dp"
+         android:textStyle="bold"
+         android:layout_centerInParent="true"/>
+         -->
+</RelativeLayout>

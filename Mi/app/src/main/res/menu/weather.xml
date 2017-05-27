@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.WeatherActivity" >
+
+    <item
+        android:id="@+id/swap_weather_logo"
+        android:icon="@drawable/ic_swap_horiz_black_24dp"
+        android:title="Swap"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/ic_gps_fixed_white_24dp"
+        android:title="@string/location"
+       />
+    <item
+        android:id="@+id/refresh"
+        android:title="@string/refresh"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+
+</menu>
